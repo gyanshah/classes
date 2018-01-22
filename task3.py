@@ -1,3 +1,4 @@
+import math
 import turtle
 class point():
         """point"""
@@ -26,8 +27,8 @@ def polygon(bob,length,n):
 		bob.lt(a)
 
 def cir(t,r):
-    circum=2*3.147*r
-    polygon(t,circum/1000,1000)
+	circum=2*math.pi*r
+	polygon(t,circum/1000,1000)
 
 cir(bob,100)
 
