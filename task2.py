@@ -15,8 +15,16 @@ rect.corner.y=0
     p.y=(rect.corner.y+rect.length)/2
     return p"""
 
-def move_rectangle(rect,dx,dy):
+"""def move_rectangle(rect,dx,dy):
     rect.width+=dx
     rect.length+=dy
-    return rect.width,rect.length
-print("The new coordinates of the rectangle are:(%g,%g)"%move_rectangle(rect,50,100))
+    return rect.width,rect.length"""
+
+def move_rectangle(rect,dx,dy):
+    p=rectangle()
+    p.width=rect.width+dx
+    p.length=rect.length+dy
+    return p
+coord=move_rectangle(rect,50,100)
+print("The old coordinates of the rectangle are:(%g,%g)"%(rect.width,rect.length))
+print("The new coordinates of the rectangle are:(%g,%g)"%(coord.width,coord.length))
