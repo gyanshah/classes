@@ -25,3 +25,4 @@ def print_time(x):
 
 print_time (time)
 newtime=increment(time,70)
+print_time(newtime)
