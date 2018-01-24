@@ -10,7 +10,8 @@ class point(object):
 
 p1=point(3,4)
 p2=point(5,6)
-print(p1.x+p2.x,p1.y+p2.y)
+p3=p1+p2
+print(p3.x,p3.y)
 def distance_between_points(p1,p2):
     dx=p2.x-p1.x
     dy=p2.y-p1.y
